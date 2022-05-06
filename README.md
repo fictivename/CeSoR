@@ -2,11 +2,11 @@
 
 This repo implements the *Cross-entropy Soft-Risk* optimization algorithm (***CeSoR***) from the paper [Efficient Risk-Averse Reinforcement Learning]().
 
-| <img src="https://github.com/fictivename/CrossEntropySampler/blob/main/Images/CeSoR_results_summary.png" width="720"> |
+| <img src="https://github.com/fictivename/CeSoR/blob/main/Images/CeSoR_results_summary.png" width="720"> |
 | :--: |
 | Summary of the results of 3 agents (risk-neutral PG, standard risk-averse [GCVaR](https://arxiv.org/abs/1404.3862), and our CeSoR) over 3 benchmarks. Top: the lower quantiles of the agent scores. Bottom: sample episodes. |
 
-| <img src="https://github.com/fictivename/CrossEntropySampler/blob/main/Images/CeSoR_driving_sample.gif" width="280"> |
+| <img src="https://github.com/fictivename/CeSoR/blob/main/Images/CeSoR_driving_sample.gif" width="280"> |
 | :--: |
 | A sample episode of CeSoR in the Driving Game. The goal is to follow the leader as closely as possible without colliding. |
 
@@ -14,8 +14,8 @@ This repo implements the *Cross-entropy Soft-Risk* optimization algorithm (***Ce
 `pip install -e .`
 
 ## Quick start - examples
-* [`CEM_Example.ipynb`](https://github.com/fictivename/CrossEntropySampler/blob/main/Examples/CEM_Example.ipynb): Minimal and explained example for interacting with the Cross Entropy module directly: implementation for a new family of distributions, running of a sampling process and analysis of the results.
-* [`GuardedMazeExample.ipynb`](https://github.com/fictivename/CrossEntropySampler/blob/main/Examples/GuardedMaze/GuardedMazeExample.ipynb), [`DrivingExample.ipynb`](https://github.com/fictivename/CrossEntropySampler/blob/main/Examples/DrivingGame/DrivingExample.ipynb), [`ServersExample.ipynb`](https://github.com/fictivename/CrossEntropySampler/blob/main/Examples/ServersAllocation/ServersExample.ipynb): End-to-end examples for CeSoR in 3 benchmarks: presentation of the benchmark, training and testing (or alternatively loading existing results), analysis and visual demonstrations.
+* [`CEM_Example.ipynb`](https://github.com/fictivename/CeSoR/blob/main/Examples/CEM_Example.ipynb): Minimal and explained example for interacting with the Cross Entropy module directly: implementation for a new family of distributions, running of a sampling process and analysis of the results.
+* [`GuardedMazeExample.ipynb`](https://github.com/fictivename/CeSoR/blob/main/Examples/GuardedMaze/GuardedMazeExample.ipynb), [`DrivingExample.ipynb`](https://github.com/fictivename/CeSoR/blob/main/Examples/DrivingGame/DrivingExample.ipynb), [`ServersExample.ipynb`](https://github.com/fictivename/CeSoR/blob/main/Examples/ServersAllocation/ServersExample.ipynb): End-to-end examples for CeSoR in 3 benchmarks: presentation of the benchmark, training and testing (or alternatively loading existing results), analysis and visual demonstrations.
 
 ## Background
 In risk-averse Reinforcement Learning (RL), the goal is to optimize some risk-measure of the returns, which inherently focuses on the lower quantiles of the returns distribution.
@@ -25,4 +25,4 @@ CeSoR works on top of the standard policy gradient algorithm and can be applied 
 On benchmarks of maze navigation, autonomous driving and computational resources allocation, we show that CeSoR achieves better risk-measures than standard methods of both risk-neutral and risk-averse policy gradient, and sometimes works even when the standard risk-averse policy gradient completely fails.
 
 ## Algorithm
-<img src="https://github.com/fictivename/CrossEntropySampler/blob/main/Images/CeSoR_algorithm.png" width="400">
+<img src="https://github.com/fictivename/CeSoR/blob/main/Images/CeSoR_algorithm.png" width="400">
