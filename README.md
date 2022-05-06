@@ -25,4 +25,4 @@ CeSoR works on top of the standard policy gradient algorithm and can be applied 
 On benchmarks of maze navigation, autonomous driving and computational resources allocation, we show that CeSoR achieves better risk-measures than standard methods of both risk-neutral and risk-averse policy gradient, and sometimes works even when the standard risk-averse policy gradient completely fails.
 
 ## Algorithm
-<img src="https://github.com/fictivename/CeSoR/blob/main/Images/CeSoR_algorithm.png" width="400">
+<img src="https://github.com/fictivename/CeSoR/blob/main/Images/CeSoR_algorithm.png" width="480">
