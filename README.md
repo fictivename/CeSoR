@@ -1,6 +1,6 @@
 # Efficient Risk-Averse Reinforcement Learning
 
-This repo implements the *Cross-entropy Soft-Risk* optimization algorithm (***CeSoR***) from the paper [Efficient Risk-Averse Reinforcement Learning]().
+This repo implements the *Cross-entropy Soft-Risk* optimization algorithm (***CeSoR***) from the paper *Efficient Risk-Averse Reinforcement Learning*.
 
 | <img src="https://github.com/fictivename/CeSoR/blob/main/Images/CeSoR_results_summary.png" width="720"> |
 | :--: |
