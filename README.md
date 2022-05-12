@@ -20,8 +20,8 @@ This repo implements the *Cross-entropy Soft-Risk* optimization algorithm (***Ce
 ## Background
 In risk-averse Reinforcement Learning (RL), the goal is to optimize some risk-measure of the returns, which inherently focuses on the lower quantiles of the returns distribution.
 This poses two difficulties: first, by focusing on certain quantiles we ignore some of the agent experience and thus reduce the sample efficiency. Second, ignoring the higher quantiles specifically leads to *blindness to success*: the optimizer is not exposed at all to beneficial behaviors of the agent.
-To overcome these challenges, we present *CeSoR* - Cross-entropy Soft-Risk optimization algorithm. CeSoR leverages the Cross Entropy method to sample the lower quantiles over the environment conditions (minimizing over *epistemic* uncertainty); while using soft risk-level scheduling to expose the optimizer to the higher quantiles of the agent performance (miximizing over *aleatoric* uncertainty).
-CeSoR works on top of the standard policy gradient algorithm and can be applied to various models including neural networks.
+To overcome these challenges, we present *CeSoR* - Cross-entropy Soft-Risk optimization algorithm. CeSoR leverages the Cross Entropy method to sample the lower quantiles over the environment conditions (minimizing over *epistemic* uncertainty); while using soft risk-level scheduling to expose the optimizer to the higher quantiles of the agent performance (maximizing over *aleatoric* uncertainty).
+CeSoR can be appplied to various models (e.g., neural networks), on top of any policy gradient algorithm.
 On benchmarks of maze navigation, autonomous driving and computational resources allocation, we show that CeSoR achieves better risk-measures than standard methods of both risk-neutral and risk-averse policy gradient, and sometimes works even when the standard risk-averse policy gradient completely fails.
 
 ## Algorithm
